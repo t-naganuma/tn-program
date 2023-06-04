@@ -9,7 +9,7 @@ function NavbarItems() {
       <li>
         <Link
           href="/"
-          className="rounded-lg px-3 py-2 font-semibold text-amber-100 transition-all duration-500 hover:bg-stone-600"
+          className="rounded-lg px-3 py-2 font-semibold text-white transition-all duration-500 hover:bg-stone-600"
         >
           Home
         </Link>
@@ -18,7 +18,7 @@ function NavbarItems() {
         {/* TODO: Pageを作成したらリンクを変更する */}
         <Link
           href="/"
-          className="rounded-lg px-3 py-2 font-semibold text-amber-100 transition-all duration-500 hover:bg-stone-600"
+          className="rounded-lg px-3 py-2 font-semibold text-white transition-all duration-500 hover:bg-stone-600"
         >
           Posts
         </Link>
@@ -27,7 +27,7 @@ function NavbarItems() {
         {/* TODO: Pageを作成したらリンクを変更する */}
         <Link
           href="/"
-          className="rounded-lg px-3 py-2 font-semibold text-amber-100 transition-all duration-500 hover:bg-stone-600"
+          className="rounded-lg px-3 py-2 font-semibold text-white transition-all duration-500 hover:bg-stone-600"
         >
           Profile
         </Link>
