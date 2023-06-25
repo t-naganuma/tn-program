@@ -1,4 +1,5 @@
 import DOMPurify from 'isomorphic-dompurify';
+import Link from 'next/link';
 import { cmsClient } from '@/lib/microcms';
 import { Blog } from '@/types/blog/types';
 
@@ -29,6 +30,14 @@ export default async function BlogPage({ params }: Props) {
           <div dangerouslySetInnerHTML={{ __html: cleanContent }} />
         </div>
       </article>
+      <div className="mt-10 w-32">
+        <Link
+          href="/"
+          className="block rounded-lg border border-stone-600 bg-stone-700 px-5 py-3 text-center text-sm text-gray-300 transition duration-200 ease-in-out hover:bg-stone-600 hover:text-gray-200"
+        >
+          一覧に戻る
+        </Link>
+      </div>
     </div>
   );
 }
