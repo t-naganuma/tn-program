@@ -19,7 +19,7 @@ export function Contents({ contents }: Props) {
               key={content.id}
               className="w-full overflow-hidden rounded-xl bg-orange-200 shadow-sm transition-opacity duration-300 ease-in hover:opacity-80"
             >
-              <Link className="block" href="#">
+              <Link className="block" href={`blogs/${content.id}`}>
                 <div className="px-6 py-4">
                   <p className="text-sm text-stone-500">tn-program</p>
                   <h2 className="mt-4 text-xl font-semibold text-stone-600">

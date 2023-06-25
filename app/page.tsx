@@ -1,17 +1,12 @@
-import { createClient } from 'microcms-js-sdk';
 import { Contents } from '@/components/Contents';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { Navbar } from '@/components/Navbar';
+import { cmsClient } from '@/lib/microcms';
 import { Blog } from '@/types/blog/types';
 
 async function getContents() {
-  const client = createClient({
-    serviceDomain: process.env.MICROCMS_SERVICE_DOMAIN || '',
-    apiKey: process.env.MICROCMS_API_KEY || '',
-  });
-
-  const res = await client.getList<Blog>({
+  const res = await cmsClient.getList<Blog>({
     customRequestInit: {
       cache: 'no-cache',
     },
