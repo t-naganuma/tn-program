@@ -1,8 +1,8 @@
+import { Noto_Sans_JP } from '@next/font/google';
 import { Metadata } from 'next';
 import './globals.css';
-import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+const notoSansJp = Noto_Sans_JP({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'TNのプログラミングブログ',
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body className={notoSansJp.className}>{children}</body>
     </html>
   );
 }
