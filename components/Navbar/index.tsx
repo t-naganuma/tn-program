@@ -56,7 +56,7 @@ export function Navbar() {
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          } ${'absolute top-16 w-screen bg-stone-700 p-4'}`}
+          } ${'absolute top-16 z-50 w-screen bg-stone-700 p-4'}`}
         >
           <NavbarItems />
         </div>
