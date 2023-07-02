@@ -24,9 +24,8 @@ function NavbarItems() {
         </Link>
       </li>
       <li>
-        {/* TODO: Pageを作成したらリンクを変更する */}
         <Link
-          href="/"
+          href="/profile"
           className="rounded-lg px-3 py-2 font-semibold text-white transition-all duration-500 hover:bg-stone-600"
         >
           Profile
@@ -57,7 +56,7 @@ export function Navbar() {
         <div
           className={`${
             isOpen ? 'block' : 'hidden'
-          } ${'absolute top-16 w-screen bg-stone-700 p-4'}`}
+          } ${'absolute top-16 z-50 w-screen bg-stone-700 p-4'}`}
         >
           <NavbarItems />
         </div>
