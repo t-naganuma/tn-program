@@ -24,9 +24,8 @@ function NavbarItems() {
         </Link>
       </li>
       <li>
-        {/* TODO: Pageを作成したらリンクを変更する */}
         <Link
-          href="/"
+          href="/profile"
           className="rounded-lg px-3 py-2 font-semibold text-white transition-all duration-500 hover:bg-stone-600"
         >
           Profile

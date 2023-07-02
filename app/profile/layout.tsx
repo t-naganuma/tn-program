@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { Footer } from '@/components/Footer';
+import { Header } from '@/components/Header';
 import { Navbar } from '@/components/Navbar';
 
 type Props = {
@@ -10,7 +11,8 @@ export default function Layout({ children }: Props) {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <Header />
+      <main className="flex-1 px-4 sm:px-0">{children}</main>
       <Footer />
     </div>
   );
